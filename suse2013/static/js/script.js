@@ -20,6 +20,10 @@ var TrackerType = $( 'meta[name="tracker-type"]' ).attr('content') // should be 
 if (!TrackerType)
     TrackerType = 'bsc'; // default tracker Bugzilla
 
+if (!TrackerURL)
+    // If not set, use the default
+    TrackerURL = 'https://bugzilla.suse.com/enter_bug.cgi';
+
 // For Bugzilla
 var bsc_component = $( 'meta[name="tracker-bsc-component"]' ).attr('content')
 if (!bsc_component) {
