@@ -220,6 +220,7 @@ task before
   <xsl:param name="daps.header.logo.alt">Logo</xsl:param>
   <xsl:param name="daps.header.js.library">static/js/jquery-1.10.2.min.js</xsl:param>
   <xsl:param name="daps.header.js.custom">static/js/script.js</xsl:param>
+ <xsl:param name="daps.header.js.comments">static/js/side-comments.min.js</xsl:param>
 
   <xsl:param name="generate.header">
     <xsl:choose>
@@ -346,6 +347,9 @@ task before
       <xsl:otherwise>1</xsl:otherwise>
     </xsl:choose>
   </xsl:param>
+
+  <!--  Create sidecomments?-->
+  <xsl:param name="generate.sidecomments" select="1"/>
 
   <!-- Should information from SVN properties be used? yes=1|no=0 -->
   <xsl:param name="use.meta" select="0"/>

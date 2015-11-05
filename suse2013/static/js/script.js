@@ -135,7 +135,8 @@ $(function() {
     $('#_toolbar').addClass('only-nav');
   }
 
-  tracker();
+  //tracker();
+  Main().installCommentSection();
 });
 
 

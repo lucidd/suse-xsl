@@ -64,7 +64,7 @@ html, body {
 #_fixed-header-wrap #_bubble-toc, .documentation, .page-bottom {
     margin: 0 auto;
     min-width: 150px;
-    max-width: 978px;
+    max-width: 50%;
 }
 
 #_header {
@@ -82,7 +82,7 @@ html, body {
 }
 
 #_footer, #_toolbar-bottom, .documentation, .page-bottom {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #_toolbar {
@@ -3156,3 +3156,5 @@ p.ds-message {
         max-height: 390px;
     }
 }
+@import url("side-comments.css");
+@import url("default-theme.css");

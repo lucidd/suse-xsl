@@ -182,13 +182,18 @@
       <xsl:with-param name="stylesheets" select="normalize-space($html.stylesheet)"/>
     </xsl:call-template>
   </xsl:if>
+  <link rel="stylesheet" type="text/css" href="static/css/side-comments.css"></link>
+  <link rel="stylesheet" type="text/css" href="static/css/default-theme.css"></link>
 
   <xsl:if test="$html.script != ''">
     <xsl:call-template name="output.html.scripts">
       <xsl:with-param name="scripts" select="normalize-space($html.script)"/>
     </xsl:call-template>
   </xsl:if>
-
+  <script src="static/js/side-comments.js"></script>
+  <script src="/assets/client-fastopt.js"></script>
+  <script src="/assets/client-opt.js"></script>
+  <script src="/assets/client-jsdeps.js"></script>
   <xsl:if test="$link.mailto.url != ''">
     <link rev="made" href="{$link.mailto.url}"/>
   </xsl:if>
